@@ -1,6 +1,10 @@
+@font-face {
+  font-family: Amatic;
+  src: url(font/amaticbold.ttf);
+}
 body{
   display: flex;
-  background: pink;
+  background-image: radial-gradient(circle, #FF1493, #ff4607, #ffb00e);
   justify-content: center;
 }
 
@@ -8,15 +12,158 @@ body{
   position: relative;
 	margin: 0;
 	top: 150px;
-	height: 300px;
-	width: 300px;
-	background: blue;
+	height: 250px;
+	width: 250px;
+  border-radius: 250px;
+	background: #ffe066;
+}
+#stem{
+  position: absolute;
+  top: 400px;
+  padding-bottom: 500px;
+  height: 250px;
+  width: 25px;
+  border-radius: 25px;
+  background: #53ff1a;
+  animation-name: stemcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;;
+}
+#box{
+  position: absolute;
+  top: 1000px;
+  left: 690px;
+  height: 100px;
+  width: 300px;
+  border-radius: 50px;
+  background: #53ff1a;
+  color: #134d00;
+  text-align: center;
+  line-height: 100px;
+  font-family: Amatic;
+  font-size: 25px;
+  animation-name: stemcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes stemcolor{
+  0%   {background-color: #53ff1a;}
+  25%  {background-color: #269900;}
+  50%  {background-color: #39e600;}
+  100% {background-color: #53ff1a;}
+
 }
 #circle{
   position: absolute;
-  top: 300px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background: #CCC;
+  top: 100px;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  background: #0099ff;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes color {
+  0%   {background-color: #0099ff;}
+  25%  {background-color: #007acc;}
+  50%  {background-color: #4db8ff;}
+  100% {background-color: #0099ff;}
+
+}
+#circle2{
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  background: #0099ff;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#circle3{
+  position: absolute;
+  top: 150px;
+  left: 700px;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  background: #0099ff;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#circle4{
+  position: absolute;
+  top: 250px;
+  left: 650px;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  background: #0099ff;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#circle5{
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  background: #0099ff;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+#center{
+  position: absolute;
+  top: 200px;
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  background-image: radial-gradient(circle, #ff3333 10%, #FFF );
+
+}
+#iris{
+  position: absolute;
+  top: 225px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background: #00cc44;
+  background-image: radial-gradient(circle, #00cc44, #4dffa6, #001a0d);
+}
+#pupil{
+  position: absolute;
+  top: 235px;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  background: #000;
+  animation-name: eyemove;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes eyemove{
+  0%{left:635px;}
+  5%{left:650px;}
+  30%{left:650px;}
+  35%{left:660px;}
+  60%{left:660px;}
+  65%{left:635px;}
+  100%{left:635px;}
+}
+#highlight{
+  position: absolute;
+  top: 245px;
+  left: 690px;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: white;
 }
